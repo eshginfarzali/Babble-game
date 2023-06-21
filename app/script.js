@@ -196,10 +196,10 @@ btnStartGameIndex.addEventListener("click", () => {
 });
 
 function startGameHandler() {
-  startGame.disabled = false;
+  startGame.disabled = true;
   stopGame.disabled = false;
 
-  let level = null;
+  let level=2000;
   easy.addEventListener("click", function() {
     level = 3000;
   });
