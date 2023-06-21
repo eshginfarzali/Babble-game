@@ -11,7 +11,8 @@
         <section class="index-box">
             <h1>Bubble Game</h1>
             <div role="textbox">
-                <input type="text" placeholder="Enter your name" value="" id="input">
+                <input type="text" required placeholder="Enter your name" value="" id="input">
+                <p id="required"></p>
             </div>
             <div>
                 <button id="btnStartGame" type="submit">Start game</button>
@@ -23,21 +24,21 @@
     <main class="game-main" id="game-main">
         <section class="game-box" id="gameBox">
           <section class="auth-info">
-            <p>Player:</p>
-            <p>Score: 10</p>
-            <p>High score: 10</p>
+            <p id="playerName"></p>
+            <p id="scoreCount">Score:0</p>
+            <p id="highScore">High score:</p>
           </section>
   
-          <div class="game-zone-box">fff</div>
+          <div class="game-zone-box" id="game-zone-box"> </div>
           <section>
             <div class="level-btns">
-              <button>Easy</button>
-              <button>Medium</button>
-              <button>Hard</button>
+              <button id="easy">Easy</button>
+              <button id="medium">Medium</button>
+              <button id="hard">Hard</button>
             </div>
             <div class="controls-btns">
-              <button>Start Game</button>
-              <button>Stop Game</button>
+              <button  id="startGame">Start Game</button>
+              <button id="stopGame">Stop Game</button>
             </div>
           </section>
         </section>
